@@ -3,6 +3,9 @@ from .models import Aluno, Usuario
 
 # Create your views here.
 
+def home(request):
+    return render(request, 'home.html')
+
 def index(request):
     if request.method == 'POST':
         data_usuario = Usuario()

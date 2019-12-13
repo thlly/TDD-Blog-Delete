@@ -1,5 +1,22 @@
 body{
+    background-color: #000;
+    color: #fff;
     margin-left: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #732878;
+    height: 80px;
+    width: 100px;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .titulo-index{

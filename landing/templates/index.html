@@ -2,12 +2,12 @@
 {% load static %}
 {% block content %}
 
-    <h1 class="titulo-index">Seja seu Compromisso</h1>
-    <p>Cadastre a sua dúvida, a sua frase ou uma dica.</p>
-    <p><a class="listagem" href="/alunos/lista">Clique aqui, para ver o que já está cadastrado!</a></p>
+    <h1 class="titulo-index">Faça seu Cadastro</h1>
+    <p>Cadastre a seu nome, email e senha.</p>
+    <p><a class="cadastro" href="/alunos/cadastro">Clique aqui, para ver o que já está cadastrado!</a></p>
     <p>{{sucesso}}</p>
 
-    <form action="/alunos/cadastro" method="post">
+    <form action="/alunos/cadastro" method="home">
         {% csrf_token %}
         <label for="email">Email: </label>
         <input name="email" type="email" required>
@@ -23,5 +23,5 @@
 
         <input type="submit" id="botao" value="Enviar">
     </form>
-    <img class="imagem" src="{% static 'img/duvida.jpeg' %}" alt="">
+    <img class="imagem" src="{% static 'img/globo.jpeg' %}" alt="">
 {% endblock %}
